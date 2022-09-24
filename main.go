@@ -5,14 +5,9 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"net/http"
 	"os"
-	"os/signal"
-	"syscall"
-	"time"
 
 	"github.com/afushimi-source/go_todo_app/config"
-	"golang.org/x/sync/errgroup"
 )
 
 func run(ctx context.Context) error {
