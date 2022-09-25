@@ -15,7 +15,7 @@ func TestNewMux(t *testing.T) {
 	resp := w.Result()
 	t.Cleanup(func() { _ = resp.Body.Close() })
 
-	if resp.StatusCode != http.StatusOk {
+	if resp.StatusCode != http.StatusOK {
 		t.Error("want status code 200, but", resp.StatusCode)
 	}
 	got, err := io.ReadAll(resp.Body)
