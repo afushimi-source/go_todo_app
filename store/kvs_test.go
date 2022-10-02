@@ -10,6 +10,11 @@ import (
 	"github.com/afushimi-source/go_todo_app/testutil"
 )
 
+const (
+	RoleKey     = "role"
+	UserNameKey = "user_name"
+)
+
 func TestKVS_Save(t *testing.T) {
 	t.Parallel()
 
